@@ -64,6 +64,21 @@ const canonical = canonicalURL ?? SITE.url;
       })();
     </script>
 
+    <!-- Auto-detect language on first visit -->
+    <script is:inline>
+      (function () {
+        var stored = localStorage.getItem("lang");
+        if (stored) return;
+        var lang = (navigator.language || navigator.userLanguage || "").substring(0, 2);
+        if (lang === "es") {
+          localStorage.setItem("lang", "es");
+          window.location.replace("/cv/es/");
+        } else {
+          localStorage.setItem("lang", "en");
+        }
+      })();
+    </script>
+
     <slot name="head" />
   </head>
   <body class="relative min-h-screen overflow-x-hidden">

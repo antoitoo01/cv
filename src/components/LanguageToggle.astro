@@ -9,8 +9,9 @@ const nextLang = lang === "en" ? "es" : "en";
 
 <a
   href={nextLang === "en" ? "/cv/" : "/cv/es"}
-  class="inline-flex items-center gap-1.5 rounded-lg border border-border-subtle px-2.5 py-1.5 text-xs font-medium text-ink-muted transition-all duration-300 hover:border-accent/30 hover:bg-accent/10 hover:text-accent-light"
+  class="lang-toggle inline-flex items-center gap-1.5 rounded-lg border border-border-subtle px-2.5 py-1.5 text-xs font-medium text-ink-muted transition-all duration-300 hover:border-accent/30 hover:bg-accent/10 hover:text-accent-light"
   aria-label={`Switch language to ${nextLang === "en" ? "English" : "Spanish"}`}
+  data-next-lang={nextLang}
 >
   <svg
     class="h-3 w-3"
@@ -27,3 +28,9 @@ const nextLang = lang === "en" ? "es" : "en";
   </svg>
   <span>{lang === "en" ? "ES" : "EN"}</span>
 </a>
+
+<script>
+  document.querySelector(".lang-toggle")?.addEventListener("click", function () {
+    localStorage.setItem("lang", this.dataset.nextLang);
+  });
+</script>
