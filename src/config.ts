@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Antonio Torres Gómez",
-  url: "https://antoniotorres.dev",
+  url: "https://antoitoo01.github.io/cv",
   email: "antoniotorresprivado@gmail.com",
   phone: "+34 651085868",
   github: "https://github.com/antoitoo01",
