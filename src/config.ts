@@ -46,15 +46,6 @@ export const PROJECTS = [
     },
     stack: ["Kotlin Multiplatform", "Ktor", "Java", "Firebase"],
   },
-  {
-    title: "Airsoft Arena",
-    description: {
-      en: "Mobile app for booking paintball and airsoft fields, store directories, game stats, social features, and secure payments — available on Android and iOS.",
-      es: "App móvil para reservar campos de paintball y airsoft, directorios de tiendas, estadísticas, funciones sociales y pagos seguros — disponible en Android y iOS.",
-    },
-    stack: ["Flutter", "Dart", "Symfony", "PHP", "Stripe"],
-    url: "https://www.plairsoft.com/",
-  },
 ] as const;
 
 export const EXPERIENCE = [
@@ -79,6 +70,7 @@ export const EXPERIENCE = [
       es: "Contribuí a desarrollar Airsoft Arena, app móvil Android/iOS con Flutter para reservar campos, directorios de tiendas, estadísticas, funciones sociales y pagos Stripe. También contribuí al backend Symfony PHP para procesamiento de datos en tiempo real y transacciones seguras.",
     },
     type: "fulltime",
+    url: "https://www.plairsoft.com/",
   },
   {
     role: { en: "Intern Developer", es: "Desarrollador en Prácticas" },
