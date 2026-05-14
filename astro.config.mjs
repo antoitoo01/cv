@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://antoitoo01.github.io",
   base: "/cv",
-  trailingSlash: "never",
+  trailingSlash: "ignore",
   integrations: [
     tailwind(),
     sitemap({
