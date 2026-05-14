@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "education": "Education"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "tagline": "Full-Stack & Mobile Developer",
+    "description": "I build cross-platform applications that are performant, well-architected, and a pleasure to use. Passionate about clean code, design patterns, and leveraging the right tools for the job.",
+    "cta_projects": "View Projects",
+    "cta_contact": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "bio_1": "I'm a software engineer focused on multiplatform development who believes good code is not just functional — it's clean, maintainable, and thoughtfully architected. I specialize in Kotlin Multiplatform, Java, and modern web frameworks.",
+    "bio_2": "From building Android and iOS apps with KMP and Flutter to crafting polished web interfaces with Angular and Vue, I adapt to whatever stack delivers the best result. I'm driven by curiosity and a commitment to writing code that lasts.",
+    "focus_title": "Focus Areas",
+    "focus_1": "Cross-Platform Architecture",
+    "focus_2": "Clean Code & Design Patterns",
+    "focus_3": "Full-Stack Development",
+    "focus_4": "Performance & UX"
+  },
+  "skills": {
+    "title": "Skills & Tools"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "view_github": "View on GitHub"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "I'm always open to new opportunities, interesting projects, and connecting with fellow developers.",
+    "email_me": "Email Me"
+  },
+  "footer": {
+    "built": "Built with Astro & TailwindCSS",
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "switch": "Español"
+  },
+  "analytics": "Data & Analytics",
+  "404": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist.",
+    "go_home": "Go Home"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "about": "Sobre Mí",
+    "skills": "Tecnologías",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "education": "Formación"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "tagline": "Desarrollador Full-Stack & Móvil",
+    "description": "Construyo aplicaciones multiplataforma rápidas, bien construidas y placenteras de usar. Apasionado por el código limpio, los patrones de diseño y usar las herramientas adecuadas para cada trabajo.",
+    "cta_projects": "Ver Proyectos",
+    "cta_contact": "Contactar"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "bio_1": "Soy ingeniero de software especializado en desarrollo multiplataforma. Creo que el buen código no solo es funcional — es limpio, mantenible y está bien arquitecturado. Me especializo en Kotlin Multiplatform, Java y frameworks web modernos.",
+    "bio_2": "Ya sea construyendo apps para Android y iOS con KMP y Flutter, o creando interfaces web cuidadas con Angular y Vue, me adapto al stack que ofrezca el mejor resultado. Me impulsa la curiosidad y el compromiso de escribir código que perdure.",
+    "focus_title": "Áreas de Enfoque",
+    "focus_1": "Arquitectura Multiplataforma",
+    "focus_2": "Código Limpio & Patrones",
+    "focus_3": "Desarrollo Full-Stack",
+    "focus_4": "Rendimiento & UX"
+  },
+  "skills": {
+    "title": "Tecnologías y Herramientas"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "view_github": "Ver en GitHub"
+  },
+  "experience": {
+    "title": "Experiencia"
+  },
+  "education": {
+    "title": "Formación"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Siempre estoy abierto a nuevas oportunidades, proyectos interesantes y conectar con otros desarrolladores.",
+    "email_me": "Enviar Email"
+  },
+  "footer": {
+    "built": "Hecho con Astro y TailwindCSS",
+    "rights": "Todos los derechos reservados."
+  },
+  "language": {
+    "switch": "English"
+  },
+  "analytics": "Data & Analytics",
+  "404": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe.",
+    "go_home": "Volver al Inicio"
+  }
+}

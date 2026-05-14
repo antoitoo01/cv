@@ -1,0 +1,129 @@
+<svg viewBox="0 0 440 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-auto w-full max-w-[400px]">
+  <defs>
+    <linearGradient id="screen-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="laptop-lid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e" />
+      <stop offset="100%" stop-color="#14141f" />
+    </linearGradient>
+    <linearGradient id="phone-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glow-blur">
+      <feGaussianBlur stdDeviation="24" />
+    </filter>
+    <filter id="soft-blur">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+  </defs>
+
+  <!-- Background glow -->
+  <ellipse cx="220" cy="180" rx="180" ry="150" fill="#6366f1" opacity="0.06" filter="url(#glow-blur)" />
+
+  <!-- Laptop base (keyboard tray) -->
+  <path d="M60 230 L80 224 L360 224 L380 230 Q385 234 380 237 L60 237 Q55 234 60 230Z" fill="#252540" stroke="#3b3b5c" stroke-width="1" />
+  <path d="M100 230 L120 226 L320 226 L340 230" stroke="#3b3b5c" stroke-width="0.75" stroke-dasharray="2 3" opacity="0.4" />
+
+  <!-- Laptop screen lid -->
+  <path d="M80 224 L100 50 Q102 44 108 44 L332 44 Q338 44 340 50 L360 224Z" fill="url(#laptop-lid)" stroke="#3b3b5c" stroke-width="1.2" rx="6" />
+  <rect x="108" y="52" width="224" height="156" rx="5" fill="#0f0f1a" stroke="#3b3b5c" stroke-width="0.8" />
+
+  <!-- Screen glow overlay -->
+  <rect x="108" y="52" width="224" height="156" rx="5" fill="url(#screen-glow)" />
+
+  <!-- Code on screen -- line 1 -->
+  <rect x="120" y="68" width="60" height="3" rx="1.5" fill="#6366f1" opacity="0.7" />
+  <rect x="186" y="68" width="40" height="3" rx="1.5" fill="#a1a1aa" opacity="0.5" />
+  <rect x="232" y="68" width="16" height="3" rx="1.5" fill="#818cf8" opacity="0.6" />
+
+  <!-- line 2 -->
+  <rect x="136" y="80" width="36" height="3" rx="1.5" fill="#6366f1" opacity="0.5" />
+  <rect x="178" y="80" width="50" height="3" rx="1.5" fill="#818cf8" opacity="0.7" />
+  <rect x="234" y="80" width="28" height="3" rx="1.5" fill="#a1a1aa" opacity="0.4" />
+
+  <!-- line 3 -->
+  <rect x="120" y="92" width="130" height="3" rx="1.5" fill="#a1a1aa" opacity="0.35" />
+
+  <!-- line 4 with accent color -->
+  <rect x="136" y="104" width="20" height="3" rx="1.5" fill="#6366f1" opacity="0.6" />
+  <rect x="162" y="104" width="90" height="3" rx="1.5" fill="#a1a1aa" opacity="0.35" />
+
+  <!-- line 5 -->
+  <rect x="120" y="116" width="80" height="3" rx="1.5" fill="#a1a1aa" opacity="0.35" />
+  <rect x="206" y="116" width="42" height="3" rx="1.5" fill="#818cf8" opacity="0.5" />
+
+  <!-- line 6 with accent -->
+  <rect x="136" y="128" width="28" height="3" rx="1.5" fill="#6366f1" opacity="0.7" />
+  <rect x="170" y="128" width="100" height="3" rx="1.5" fill="#a1a1aa" opacity="0.35" />
+
+  <!-- line 7 -->
+  <rect x="120" y="140" width="160" height="3" rx="1.5" fill="#a1a1aa" opacity="0.3" />
+
+  <!-- line 8 -->
+  <rect x="136" y="152" width="44" height="3" rx="1.5" fill="#818cf8" opacity="0.6" />
+  <rect x="186" y="152" width="60" height="3" rx="1.5" fill="#a1a1aa" opacity="0.35" />
+
+  <!-- line 9 -->
+  <rect x="120" y="164" width="100" height="3" rx="1.5" fill="#a1a1aa" opacity="0.3" />
+
+  <!-- line 10 -->
+  <rect x="120" y="176" width="44" height="3" rx="1.5" fill="#a1a1aa" opacity="0.25" />
+
+  <!-- Bottom bar -->
+  <rect x="108" y="200" width="224" height="2" fill="#3b3b5c" opacity="0.5" />
+  <circle cx="300" cy="201" r="2.5" fill="#6366f1" opacity="0.8" />
+
+  <!-- Phone -->
+  <g transform="translate(310, 120) rotate(8)">
+    <!-- phone glow -->
+    <rect x="-4" y="-4" width="68" height="128" rx="12" fill="#6366f1" opacity="0.04" filter="url(#soft-blur)" />
+
+    <!-- phone body -->
+    <rect x="0" y="0" width="60" height="120" rx="10" fill="#1a1a2e" stroke="#3b3b5c" stroke-width="1.2" />
+
+    <!-- phone screen -->
+    <rect x="5" y="8" width="50" height="92" rx="4" fill="#0f0f1a" />
+
+    <!-- phone screen glow -->
+    <rect x="5" y="8" width="50" height="92" rx="4" fill="url(#phone-glow)" />
+
+    <!-- phone status bar -->
+    <rect x="10" y="13" width="18" height="2.5" rx="1.25" fill="#a1a1aa" opacity="0.4" />
+    <circle cx="48" cy="14.25" r="2" fill="#6366f1" opacity="0.7" />
+
+    <!-- app card 1 -->
+    <rect x="10" y="22" width="40" height="14" rx="3" fill="#6366f1" opacity="0.12" />
+    <rect x="14" y="26" width="14" height="6" rx="1.5" fill="#6366f1" opacity="0.5" />
+    <rect x="30" y="28" width="16" height="2" rx="1" fill="#a1a1aa" opacity="0.3" />
+
+    <!-- app card 2 -->
+    <rect x="10" y="40" width="40" height="14" rx="3" fill="#818cf8" opacity="0.1" />
+    <rect x="14" y="44" width="10" height="6" rx="1.5" fill="#818cf8" opacity="0.4" />
+    <rect x="26" y="46" width="20" height="2" rx="1" fill="#a1a1aa" opacity="0.3" />
+
+    <!-- app card 3 -->
+    <rect x="10" y="58" width="40" height="14" rx="3" fill="#6366f1" opacity="0.08" />
+    <rect x="14" y="62" width="12" height="6" rx="1.5" fill="#6366f1" opacity="0.4" />
+    <rect x="28" y="64" width="18" height="2" rx="1" fill="#a1a1aa" opacity="0.3" />
+
+    <!-- nav dots -->
+    <rect x="22" y="82" width="16" height="2" rx="1" fill="#a1a1aa" opacity="0.25" />
+
+    <!-- home indicator -->
+    <rect x="16" y="106" width="28" height="3" rx="1.5" fill="#a1a1aa" opacity="0.2" />
+  </g>
+
+  <!-- Floating dots decoration -->
+  <circle cx="80" cy="100" r="2.5" fill="#6366f1" opacity="0.25" />
+  <circle cx="60" cy="160" r="1.5" fill="#818cf8" opacity="0.2" />
+  <circle cx="370" cy="80" r="2" fill="#6366f1" opacity="0.2" />
+  <circle cx="400" cy="200" r="1.5" fill="#818cf8" opacity="0.15" />
+  <circle cx="50" cy="200" r="1" fill="#6366f1" opacity="0.3" />
+
+  <!-- Small decorative shapes -->
+  <rect x="68" y="130" width="4" height="4" rx="1" fill="#6366f1" opacity="0.15" transform="rotate(45 70 132)" />
+  <rect x="375" y="140" width="3" height="3" rx="1" fill="#818cf8" opacity="0.15" transform="rotate(45 376 141)" />
+</svg>
