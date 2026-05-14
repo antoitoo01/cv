@@ -1,6 +1,7 @@
 ---
 import SectionTitle from "./SectionTitle.astro";
 import ScrollReveal from "./ScrollReveal.astro";
+import ProjectCard from "./ProjectCard.astro";
 import { PROJECTS } from "../config";
 
 export interface Props {
@@ -21,40 +22,20 @@ const isEn = lang === "en";
     <div class="grid gap-4 md:grid-cols-2">
       {PROJECTS.map((project, i) => (
         <ScrollReveal delay={i * 80}>
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="glass-card group relative flex h-full flex-col overflow-hidden p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/20 sm:p-6"
-          >
-            <div class="relative flex-1">
-              <h3 class="text-base font-bold text-ink transition-colors group-hover:text-accent-light">
-                {project.title}
-              </h3>
-
-              <p class="mt-1.5 text-xs leading-relaxed text-ink-muted">
-                {isEn ? project.description.en : project.description.es}
-              </p>
-
-              <div class="mt-4 flex flex-wrap gap-1.5">
-                {project.stack.map((tech) => (
-                  <span
-                    key={tech}
-                    class="rounded-md bg-surface-50 px-2 py-0.5 text-[11px] font-medium text-ink-dim transition-colors group-hover:bg-accent/10 group-hover:text-accent-light"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+          {project.url ? (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group relative flex h-full flex-col overflow-hidden p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/20 sm:p-6"
+            >
+              <ProjectCard project={project} isEn={isEn} viewLabel={t.projects.view_project} />
+            </a>
+          ) : (
+            <div class="glass-card group relative flex h-full flex-col overflow-hidden p-5 sm:p-6">
+              <ProjectCard project={project} isEn={isEn} viewLabel={t.projects.view_project} />
             </div>
-
-            <div class="relative mt-4 flex items-center gap-1.5 text-[11px] font-medium text-ink-faint transition-colors group-hover:text-accent-light">
-              <span>{t.projects.view_github}</span>
-              <svg class="h-3 w-3 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </div>
-          </a>
+          )}
         </ScrollReveal>
       ))}
     </div>

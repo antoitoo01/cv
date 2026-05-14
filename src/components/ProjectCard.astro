@@ -1,0 +1,44 @@
+---
+export interface Props {
+  project: {
+    title: string;
+    description: { en: string; es: string };
+    stack: readonly string[];
+    url?: string;
+  };
+  isEn: boolean;
+  viewLabel: string;
+}
+
+const { project, isEn, viewLabel } = Astro.props;
+---
+
+<div class="relative flex-1">
+  <h3 class="text-base font-bold text-ink transition-colors group-hover:text-accent-light">
+    {project.title}
+  </h3>
+
+  <p class="mt-1.5 text-xs leading-relaxed text-ink-muted">
+    {isEn ? project.description.en : project.description.es}
+  </p>
+
+  <div class="mt-4 flex flex-wrap gap-1.5">
+    {project.stack.map((tech) => (
+      <span
+        key={tech}
+        class="rounded-md bg-surface-50 px-2 py-0.5 text-[11px] font-medium text-ink-dim transition-colors group-hover:bg-accent/10 group-hover:text-accent-light"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
+</div>
+
+{project.url && (
+  <div class="relative mt-4 flex items-center gap-1.5 text-[11px] font-medium text-ink-faint transition-colors group-hover:text-accent-light">
+    <span>{viewLabel}</span>
+    <svg class="h-3 w-3 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+    </svg>
+  </div>
+)}

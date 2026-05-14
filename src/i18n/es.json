@@ -29,7 +29,7 @@
   },
   "projects": {
     "title": "Proyectos Destacados",
-    "view_github": "Ver en GitHub"
+    "view_project": "Ver Proyecto"
   },
   "experience": {
     "title": "Experiencia"

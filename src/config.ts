@@ -29,7 +29,6 @@ export const PROJECTS = [
       es: "Sistema web de gestión de información de producto construido con Angular 19 y TypeScript para una gran empresa de electrodomésticos. UI clara y concisa para reducir el tiempo de gestión de producto ~10 segundos por producto.",
     },
     stack: ["Angular 19", "TypeScript", "TailwindCSS"],
-    github: "https://github.com/antoitoo01",
   },
   {
     title: "Employee Check-In System",
@@ -38,7 +37,6 @@ export const PROJECTS = [
       es: "Aplicación Java para registrar fichajes de empleados con restricciones horarias, validación por geolocalización y generación de informes. También contribuí a proyectos web con Laravel, Vue 3 y Tailwind CSS.",
     },
     stack: ["Java", "Laravel", "Vue 3", "TailwindCSS"],
-    github: "https://github.com/antoitoo01",
   },
   {
     title: "All My Money",
@@ -47,7 +45,15 @@ export const PROJECTS = [
       es: "Aplicación de gestión de finanzas personales centrada en accesibilidad multiplataforma (Desktop, Android, iOS), optimización de recursos y fácil mantenimiento. Construida con arquitectura limpia y patrones de diseño.",
     },
     stack: ["Kotlin Multiplatform", "Ktor", "Java", "Firebase"],
-    github: "https://github.com/antoitoo01",
+  },
+  {
+    title: "Airsoft Arena",
+    description: {
+      en: "Mobile app for booking paintball and airsoft fields, store directories, game stats, social features, and secure payments — available on Android and iOS.",
+      es: "App móvil para reservar campos de paintball y airsoft, directorios de tiendas, estadísticas, funciones sociales y pagos seguros — disponible en Android y iOS.",
+    },
+    stack: ["Flutter", "Dart", "Symfony", "PHP", "Stripe"],
+    url: "https://www.plairsoft.com/",
   },
 ] as const;
 
