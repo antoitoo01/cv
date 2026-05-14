@@ -109,7 +109,7 @@ export const EDUCATION = [
     },
     school: "Cívica",
     location: "Granada, Spain",
-    period: { en: "2026", es: "2026" },
+    period: { en: "Mar 2026 — Apr 2026", es: "Mar 2026 — Abr 2026" },
     description: {
       en: "156-hour training program in Data Analytics covering SQL, data modeling (BigQuery, Snowflake), dashboard development (Power BI, Looker), functional analysis, and data-driven decision-making. Completed successfully.",
       es: "Programa formativo de 156 horas en Data Analytics: SQL, modelado de datos (BigQuery, Snowflake), desarrollo de dashboards (Power BI, Looker), análisis funcional y toma de decisiones basada en datos.",
